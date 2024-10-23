@@ -12,7 +12,7 @@ Apoyate en los siguientes recursos para realizar la práctica:
 
 ## Identificación de la Actividad
 - **ID de la Actividad:** u2-2-2-2
-- **Módulo:** [Nombre del módulo] Prog
+- **Módulo:** Desarrollo de aplicaciones web. Programacion
 - **Unidad de Trabajo:** Tema 2
 - **Fecha de Creación:** 20/10/24
 - **Fecha de Entrega:** 23/10/24
