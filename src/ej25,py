@@ -1,0 +1,45 @@
+'''
+Solicitar al usuario que ingrese una frase y luego informar cuál fue la palabra más larga 
+(en caso de haber más de una, mostrar la primera) y cuántas palabras había. 
+Precondición: se tomará como separador de palabras al carácter “ “ (espacio), ya sea uno o más
+'''
+
+def entrada():
+    frase_usuario = input("Ingresa una frase: ")
+    return frase_usuario
+
+def procesamiento(frase):
+    """
+    Proceso la frase para encontrar la palabra más larga y contar el número total de palabras.
+    Devuelvo la palabra más larga y el conteo de palabras.
+    """
+    # Separamos la frase por espacios en blanco y eliminamos espacios extras
+    palabras = frase.split()
+    cantidad_palabras = len(palabras)
+   
+    palabra_larga = ""
+    longitud_maxima = 0 
+    for palabra in palabras:
+        if len(palabra) > longitud_maxima:
+            palabra_larga = palabra
+            longitud_maxima = len(palabra)
+
+    return palabra_larga, cantidad_palabras
+
+def salida(palabra_larga, cantidad_palabras):
+
+    print(f"La palabra más larga es: '{palabra_larga}'")
+    print(f"Número total de palabras: {cantidad_palabras}")
+
+def main():
+    # Entrada
+    frase = entrada()
+    
+    # Procesamiento
+    palabra_larga, cantidad_palabras = procesamiento(frase)
+    
+    # Salida
+    salida(palabra_larga, cantidad_palabras)
+
+if __name__ == "__main__":
+    main()
